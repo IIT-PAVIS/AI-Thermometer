@@ -5,7 +5,7 @@
     AI thermometer: Code for automatically measuring the temperature of people using a thermal camera.
    
     IIT : Istituto italiano di tecnologia
-    PAVIS research line
+    Pattern Analysis and Computer Vision (PAVIS) research line
 
     Description: The software first detect people with an off-the-shelf body pose detector and then extract location of the face where the
     temperature is measured. The software requires a known reference temperature and the value and position are provided by the user
