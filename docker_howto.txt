@@ -1,0 +1,76 @@
+
+This guide permits to install Docker and build aithermometer docker image
+
+DOCKER SETUP
+
+sudo apt -y update
+
+sudo apt -y install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+
+sudo apt remove docker docker-engine docker.io containerd runc
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+
+sudo apt update
+
+sudo apt -y install docker-ce docker-ce-cli containerd.io
+
+sudo usermod -aG docker $USER
+
+newgrp docker
+
+docker version
+
+At this point, if all is done, you will see docker version and other infos
+
+NVIDIA REPOSITORY
+
+To permits installing NVIDIA cuda-cudnn10.0 image Add the package repositories
+
+distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
+
+curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -
+
+curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
+
+sudo apt-get update && sudo apt-get install -y nvidia-container-toolkit
+
+sudo systemctl restart docker
+
+BUILD DOCKER IMAGE
+
+To build an image use Dockerfile and use this commad into same Docker folder 
+
+docker build -t pmorerio/aithermometer:release1 .
+
+It is a long process........
+
+USE IMAGE
+
+To use your docker image:
+
+create local results folder
+
+start your docker with this, changing your folder name
+
+docker run -it -d --gpus all -e NVIDIA_VISIBLE_DEVICES=0 --name=aithermometer -v <absolute path of your folder>:/ai_thermometer/results pmorerio/aithermometer:release1
+
+docker exec -it aithermometer bash -c "./test.sh"
+
+after this you will see some text output and host results folder will be filled with
+oputput images
+
+You can also:
+
+    o Get Logs: docker logs aithermometer
+    o Start Container: docker start aithermometer
+    o Stop Container: docker stop aithermometer
+    o Delete Container: docker rm aithermometer
+    
+to reuse name you must remove name with docker rm aithermometer
+
+
+
+
