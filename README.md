@@ -80,6 +80,7 @@ The resulting images will be stored in <local_folder>.
 ## Dataset
 Below are some examples on the [FREE FLIR Thermal Dataset](https://www.flir.com/oem/adas/adas-dataset-form/).
 
+<p float="left">
 <img src="./results/image1_out.jpg" alt="sample1" width="200"/>
 <img src="./results/image2_out.jpg" alt="sample2" width="200"/>
 <img src="./results/image3_out.jpg" alt="sample3" width="200"/>
@@ -90,6 +91,7 @@ Below are some examples on the [FREE FLIR Thermal Dataset](https://www.flir.com/
 <img src="./results/image8_out.jpg" alt="sample8" width="200"/>
 <img src="./results/image9_out.jpg" alt="sample9" width="200"/>
 <img src="./results/image10_out.jpg" alt="sample10" width="200"/>
+</p>
 
 ## Further development
 * [ ] Increase the number of thermal cameras supported
