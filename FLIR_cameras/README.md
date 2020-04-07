@@ -1,14 +1,10 @@
 # :thermometer: AiThermometer Flir :thermometer:
+<!--
 Code for automatically measuring the temperature of people using a thermal camera.
 The software can be freely used for any non-commercial applications and it is useful
 for the automatic early-screening of fever symptoms. The code is open and can be 
 improved with your support, please contact us at aithermometer@iit.it if you want to help us.
-<!-- github support emotiocons! https://gist.github.com/rxaviers/7360908-->
-
-![sample](./results/image6_out.jpg)
-
-
-<!--![sample](./results/image8_out.jpg) -->
+-->
 
 
 ## Description
@@ -73,4 +69,4 @@ This project incorporates material from the projects listed below (collectively,
 5. [turbo jpeg](https://libjpeg-turbo.org/)
 6. [PyTurboJPEG](https://pypi.org/project/PyTurboJPEG/)
 
-<img src="./iit-pavis.png" alt="iit-pavis-logo" width="200"/>
+<img src="../iit-pavis.png" alt="iit-pavis-logo" width="200"/>
