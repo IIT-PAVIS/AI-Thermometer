@@ -10,14 +10,14 @@ improved with your support, please contact us at aithermometer@iit.it if you wan
 
 <!--![sample](./results/image8_out.jpg) -->
 
+## What's New
+#### [April 7th, 2020]
++ New code for acquiring and processing data streams from FLIR<sup>&reg;</sup> cameras in the folder [FLIR_cameras](FLIR_cameras).
+
 
 ## Description
+The software first detect people with an off-the-shelf body pose detector and then extract location of the face where the temperature is measured. The software requires a known reference temperature and the value and position are provided by the user (this information is shown as a single small green circle on the image). It is possible to have the absolute temperature but you need an image from a thermal camera with correct radiometric calibration and radiometric exif data loaded into image.
 
-The software first detect people with an off-the-shelf body pose detector and then extract location of the face where the
-temperature is measured. The software requires a known reference temperature and the value and position are provided by the user
-(this information is shown as a single small green circle on the image).
-It is possible to have the absolute temperature but you need an image from a thermal camera with correct radiometric calibration
-and radiometric exif data loaded into image.
  
 ## Installation steps
 Code is developed in Python3 and tested on Ubuntu 18.04 with NVidia driver, Cuda 10.0 and Cudnn 7.6.5. 
