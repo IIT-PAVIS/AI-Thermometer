@@ -45,12 +45,6 @@ Usage Example:
 python3 ai_thermometer.py --config_file ./config.ini
 ```
 
-## Further development
-* [ ] Increase the number of thermal cameras supported
-* [ ] Increase people detection rate of openpose applied on thermal images
-* [ ] Improve robustness of face measurement algorithm
-* [ ] Automatic detection of masks, eyewear, scarf and other face occluding elements
-
 ## Disclaimer
 The information and content provided by this application is for information purposes only. 
 You hereby agree that you shall not make any health or medical related decision based in whole or in part on anything contained within the application without consulting your personal doctor.
