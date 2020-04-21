@@ -33,7 +33,7 @@ To run this code you need to install:
         `apt-get install python3-opencv`  
         `pip3 install opencv-python`
 
-    * **Ubuntu 18.04 x64 Spinnaker Driver and Python Library **:
+    * **Ubuntu 18.04 x64 Spinnaker Driver and Python Library**:
         follow download/install istruction from https://www.flir.com/products/spinnaker-sdk/
 
 ## Usage
