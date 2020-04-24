@@ -11,8 +11,10 @@ improved with your support, please contact us at aithermometer@iit.it if you wan
 <!--![sample](./results/image8_out.jpg) -->
 
 ## What's New
+#### [April 24th, 2020]
++ We are maintaining [list of supported cameras](#markdown-tested-hardware). Please feel free to contribute.
 #### [April 7th, 2020]
-+ New code for acquiring and processing data streams from FLIR<sup>&reg;</sup> cameras in the folder [FLIR_cameras](FLIR_cameras).
++ New code for acquiring and processing data streams from FLIR<sup>&reg;</sup> cameras in the folder [FLIR_cameras](FLIR_cameras).  
 
 
 ## Description
@@ -98,6 +100,13 @@ Below are some examples on the [FREE FLIR Thermal Dataset](https://www.flir.com/
 * [ ] Increase people detection rate of openpose applied on thermal images
 * [ ] Improve robustness of face measurement algorithm
 * [ ] Automatic detection of masks, eyewear, scarf and other face occluding elements
+
+## Tested hardware
++  FLIR<sup>&reg;</sup> A600
++  FLIR<sup>&reg;</sup> A315
+
+You contribution in broadening the list of tested cameras is very welcome.
+
 
 ## Disclaimer
 The information and content provided by this application is for information purposes only. 
