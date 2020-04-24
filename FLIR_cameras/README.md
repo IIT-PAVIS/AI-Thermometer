@@ -12,6 +12,13 @@ improved with your support, please contact us at aithermometer@iit.it if you wan
 The software first detect people with an off-the-shelf body pose detector and then extract location of the face where the temperature is measured. In this version flir spinnaker driver camera is used. It can connect to remote gigE camera. It acquire 16bit images with temperature level and convert it to real temperatures measures matrix. Maximum face temperature and eyes temperature are extracted. Extracted video is converted to RGB24 false color images (COLORMAP_JET) and can be accessed from http mjpeg multipart streaming embedded server, data can be accessed in json format with rest/json calls on configurable ports.
 
 config.ini contains all configurable parameters and any parameters is documented such as each python code line  
+
+#### Tested hardware
++  FLIR<sup>&reg;</sup> A600
++  FLIR<sup>&reg;</sup> A315
+
+You contribution in broadening the list of tested cameras is very welcome.
+
  
 ## Installation steps
 Code is developed in Python3 and tested on Ubuntu 18.04 with NVidia driver, Cuda 10.0 and Cudnn 7.6.5, Flir A600. 
