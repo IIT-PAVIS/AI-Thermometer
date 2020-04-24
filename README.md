@@ -12,7 +12,7 @@ improved with your support, please contact us at aithermometer@iit.it if you wan
 
 ## What's New
 #### [April 24th, 2020]
-+ We are maintaining [list of supported cameras](#markdown-tested-hardware). Please feel free to contribute.
++ We are maintaining [list of supported cameras](#tested-hardware). Please feel free to contribute.
 #### [April 7th, 2020]
 + New code for acquiring and processing data streams from FLIR<sup>&reg;</sup> cameras in the folder [FLIR_cameras](FLIR_cameras).  
 
@@ -24,7 +24,7 @@ The software first detect people with an off-the-shelf body pose detector and th
 ## Installation steps
 Code is developed in Python3 and tested on Ubuntu 18.04 with NVidia driver, Cuda 10.0 and Cudnn 7.6.5. 
 
-AiThermometer can be run in a Docker container, as described in [this section](#markdown-dockerfile).
+AiThermometer can be run in a Docker container, as described in [this section](#dockerfile).
 
 * [x] **Install the requirements**  
 To run this code without Docker support, you need to install:
